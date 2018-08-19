@@ -22,3 +22,19 @@ variable "public_subnet" {
 variable "public_subnet_address_prefix" {
   default = "192.168.0.0/28"
 }
+
+variable "project_name" {
+  default = "br_prod"
+}
+
+variable "sqlversion" {
+  default = "12.0"
+}
+
+variable "sqladmin" {
+  default = "brazadmin"
+}
+
+variable "sqladminpassword" {
+  default = "@zadm!n1234"
+}
