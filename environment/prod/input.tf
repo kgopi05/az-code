@@ -24,7 +24,7 @@ variable "public_subnet_address_prefix" {
 }
 
 variable "project_name" {
-  default = "br_prod"
+  default = "br-prod"
 }
 
 variable "sqlversion" {
@@ -37,4 +37,15 @@ variable "sqladmin" {
 
 variable "sqladminpassword" {
   default = "@zadm!n1234"
+}
+
+
+
+variable "sqldbname" {
+  default = "brprod"
+  description = "Database 01"
+}
+
+variable "sqldbedition" {
+  default = "Basic"
 }

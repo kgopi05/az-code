@@ -15,3 +15,9 @@ variable "public_subnet_address_prefix"{}
 variable "sqlversion" {}
 variable "sqladmin" {}
 variable "sqladminpassword" {}
+
+
+## variable for sql data_bag_name
+
+variable "sqldbname" {}
+variable "sqldbedition" {}
