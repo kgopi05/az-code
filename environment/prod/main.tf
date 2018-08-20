@@ -1,5 +1,6 @@
 module "layers" {
   source = "../../modules/layers"
+  tags        = "${var.tags}"
   az_vnet = "${var.az_vnet}"
   az_rg = "${var.az_rg}"
   project_location = "${var.project_location}"
@@ -12,4 +13,5 @@ module "layers" {
   sqladminpassword="${var.sqladminpassword}"
   sqldbname = "${var.sqldbname}"
   sqldbedition = "${var.sqldbedition}"
+  servicebus_name = "${var.servicebus_name}"
 }

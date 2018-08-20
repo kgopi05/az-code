@@ -5,6 +5,11 @@ resource "azurerm_sql_database" "sql_db" {
   location = "${var.project_location}"
   server_name = "${azurerm_sql_server.sqlserver.name}"
   edition = "${var.sqldbedition}"
+  tags = "${merge(map(
+    "Name", "${var.tags["environment"]}-db",
+    "Description", "${var.tags["environment"]} SQL DB"),
+    var.tags
+)}"
 }
 
 

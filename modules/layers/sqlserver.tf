@@ -5,10 +5,12 @@ resource "azurerm_sql_server" "sqlserver" {
   version                      = "${var.sqlversion}"
   administrator_login          = "${var.sqladmin}"
   administrator_login_password = "${var.sqladminpassword}"
+  tags = "${merge(map(
+    "Name", "${var.tags["environment"]}-sqlserver",
+    "Description", "${var.tags["environment"]} sqlserver"),
+    var.tags
+)}"
 
-  tags {
-    environment = "br-prod"
-  }
 }
 
 # resource "azurerm_sql_active_directory_administrator" "test" {

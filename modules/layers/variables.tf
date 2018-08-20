@@ -2,6 +2,11 @@
 variable "project_name" {}
 variable "project_location" {}
 
+variable "tags" {
+  type        = "map"
+  description = "Map of tags to be assigned to the resources"
+}
+
 ## vpc & subnet variables ##
 variable "az_vnet" {}
 variable "az_rg"{}
@@ -21,3 +26,8 @@ variable "sqladminpassword" {}
 
 variable "sqldbname" {}
 variable "sqldbedition" {}
+
+
+## variables for servicebus ##
+
+variable "servicebus_name" {}
