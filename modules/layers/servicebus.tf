@@ -17,3 +17,13 @@ resource "azurerm_servicebus_namespace" "servicebus" {
 #
 #   enable_partitioning = true
 # }
+
+
+resource "azurerm_servicebus_queue" "test" {
+  count = 2
+  name                = "testQueue"
+  resource_group_name = "${azurerm_resource_group.test.name}"
+  namespace_name      = "${azurerm_servicebus_namespace.test.name}"
+
+  enable_partitioning = true
+}

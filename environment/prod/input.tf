@@ -66,7 +66,7 @@ variable "servicebus_name" {
   default = "brprodservicebus"
 }
 
-variable "servicebus_nameslist" {
-  type = "list"
-  default = ["brprod.queue.disposal-notice-reporting", "brprod.queue.eod-stock-reporting"]
-}
+# variable "servicebus_nameslist" {
+#   type = "list"
+#   default = ["brprod.queue.disposal-notice-reporting", "brprod.queue.eod-stock-reporting"]
+# }

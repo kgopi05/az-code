@@ -1,3 +1,11 @@
-.terraform
-.tfstate
-DS
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.pyc
+
+# Module directory
+.terraform/
+
+# Variable files
+*.tfvars
+*.cer
