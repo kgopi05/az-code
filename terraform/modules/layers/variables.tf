@@ -31,3 +31,7 @@ variable "sqldbedition" {}
 ## variables for servicebus ##
 
 variable "servicebus_name" {}
+variable "sbusqueue_nameslist" {
+  type        = "map"
+  description = "Map of servicebus queue names"
+}

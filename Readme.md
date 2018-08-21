@@ -13,6 +13,6 @@ pending items :
 
 1. Configuring the SQL Database firewall
 2. Configuring the sql AAD admin
-#3. provisioning the service bus -completed
-4. provisioning the servicebus queues
+3. provisioning the service bus -completed
+4. provisioning the servicebus queues - completed
 5. provisioning the logicapps  

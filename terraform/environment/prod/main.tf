@@ -14,5 +14,5 @@ module "layers" {
   sqldbname = "${var.sqldbname}"
   sqldbedition = "${var.sqldbedition}"
   servicebus_name = "${var.servicebus_name}"
-  servicebus_nameslist = "${var.servicebus_nameslist}"
+  sbusqueue_nameslist = "${var.sbusqueue_nameslist}"
 }
