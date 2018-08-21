@@ -3,6 +3,7 @@
 *.tfstate.backup
 *.pyc
 .DS_Store
+*.DS_*
 
 # Module directory
 .terraform/
