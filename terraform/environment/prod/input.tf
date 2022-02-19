@@ -8,8 +8,8 @@ variable "az_rg" {
 
 variable "tags" {
   default = {
-    owner       = "Talha Khan"
-    email       = "Talha.Khan@sainsburys.co.uk"
+    owner       = ""
+    email       = ""
     project     = "br-dev"
     environment = "dev"
     costcentre  = "XXXX"
